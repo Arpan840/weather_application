@@ -35,17 +35,20 @@ fetchData.addEventListener("click", async () => {
     }
     let wetherReport = await data.json();
     console.log(wetherReport.location.name);
-    location.innerHTML = wetherReport.location.name;
-    windSpeed.innerHTML = wetherReport.current.wind_kph;
-    humidity.innerHTML = wetherReport.current.humidity;
-    timezone.innerHTML = wetherReport.location.tz_id;
-    pressure.innerHTML = wetherReport.current.pressure_in;
-    winddirection.innerHTML = wetherReport.current.wind_dir;
-    uvindex.innerHTML = wetherReport.current.uv;
-    feelslike.innerHTML = wetherReport.current.feelslike_c;
+    location.innerHTML = "Location : " + wetherReport.location.name;
+    windSpeed.innerHTML =
+      "Wind Speed : " + wetherReport.current.wind_kph + "kmph";
+    humidity.innerHTML = "Humidity : " + wetherReport.current.humidity;
+    timezone.innerHTML = "Time Zone : " + wetherReport.location.tz_id;
+    pressure.innerHTML =
+      "Pressure : " + wetherReport.current.pressure_in + "atm";
+    winddirection.innerHTML =
+      "Wind Direction : " + wetherReport.current.wind_dir;
+    uvindex.innerHTML = "UV Index : " + wetherReport.current.uv;
+    feelslike.innerHTML = "Feels like : " + wetherReport.current.feelslike_c;
 
-    longitude.innerHTML = "Long: " + locationData.longitude;
-    latitude.innerHTML = "Lat: " + locationData.latitude;
+    longitude.innerHTML = "Long : " + locationData.longitude;
+    latitude.innerHTML = "Lat : " + locationData.latitude;
     gmap.innerHTML = `<iframe
     src="https://maps.google.com/maps?q=${locationData.latitude}, ${locationData.longitude}&z=15&output=embed"
     width="1200"
