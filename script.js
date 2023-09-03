@@ -28,7 +28,7 @@ fetchData.addEventListener("click", async () => {
       accuracy: position.coords.accuracy,
     };
     let data = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=d1221b093d134b758ff74525230309&q=${locationData.latitude},${locationData.longitude}&aqi=yes`
+      `https://api.weatherapi.com/v1/current.json?key=d1221b093d134b758ff74525230309&q=${locationData.latitude},${locationData.longitude}&aqi=yes`
     );
     if (!data.ok) {
       throw new Error(`Failed to fetch weather data (HTTP ${data.status})`);
