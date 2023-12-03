@@ -49,6 +49,7 @@ body {
 }
 .report {
   display: none;
+ 
 }
 .discription {
   color: #fff;
@@ -101,6 +102,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2%;
 }
 .cordinates {
   display: flex;
@@ -160,5 +162,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 5%;
-  margin: 3.5%;
+  margin: auto;
+  
+  width: 97vw;
 }
