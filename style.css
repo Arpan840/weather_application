@@ -65,7 +65,7 @@ body {
   flex-shrink: 0;
 }
 .long {
-  width: 40%;
+  width: 30%;
   height: 10%;
   flex-shrink: 0;
   border-radius: 5px;
@@ -81,7 +81,7 @@ body {
   padding: 10px;
 }
 .lat {
-  width: 40%;
+  width: 30%;
   height: 10%;
   flex-shrink: 0;
   border-radius: 5px;
