@@ -13,8 +13,12 @@ const winddirection = document.querySelector("#winddirection");
 const uvindex = document.querySelector("#uvindex");
 const feelslike = document.querySelector("#feelslike");
 
+
 fetchData.addEventListener("click", async () => {
   try {
+    fetchData.innerHTML=`<div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+   </div>`
     const position = await new Promise((resolve, reject) => {
       navigator.geolocation.getCurrentPosition(
         (location) => resolve(location),
