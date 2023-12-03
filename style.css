@@ -167,3 +167,12 @@ body {
   
   width: 93.5vw;
 }
+@media screen and (max-width: 800px) {
+  .lat {
+    width: 40%;
+    
+  }
+  .long{
+    width: 40%
+  }
+}
