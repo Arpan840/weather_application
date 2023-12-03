@@ -51,7 +51,7 @@ fetchData.addEventListener("click", async () => {
     latitude.innerHTML = "Lat : " + locationData.latitude;
     gmap.innerHTML = `<iframe
     src="https://maps.google.com/maps?q=${locationData.latitude}, ${locationData.longitude}&z=15&output=embed"
-    width="1600"
+    width="1700"
     height="400"
     frameborder="0"
     style="border: 0"
